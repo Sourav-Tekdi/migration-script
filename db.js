@@ -29,6 +29,20 @@ const dbConfig = {
     host: process.env.ATTENDANCE_DESTINATION_DB_HOST,
     port: parseInt(process.env.ATTENDANCE_DESTINATION_DB_PORT || '5432'),
     database: process.env.ATTENDANCE_DESTINATION_DB_NAME
+  },
+  assessment_source: {
+    user: process.env.ASSESSMENT_SOURCE_DB_USER,
+    password: process.env.ASSESSMENT_SOURCE_DB_PASSWORD,
+    host: process.env.ASSESSMENT_SOURCE_DB_HOST,
+    port: parseInt(process.env.ASSESSMENT_SOURCE_DB_PORT || '5432'),
+    database: process.env.ASSESSMENT_SOURCE_DB_NAME
+  },
+  assessment_destination: { 
+    user: process.env.ASSESSMENT_DESTINATION_DB_USER,
+    password: process.env.ASSESSMENT_DESTINATION_DB_PASSWORD,
+    host: process.env.ASSESSMENT_DESTINATION_DB_HOST,
+    port: parseInt(process.env.ASSESSMENT_DESTINATION_DB_PORT || '5432'),
+    database: process.env.ASSESSMENT_DESTINATION_DB_NAME
   }
 };
 

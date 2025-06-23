@@ -1,16 +1,20 @@
 {
-  "name": "metabase-transform",
+  "name": "migration-script",
   "version": "1.0.0",
-  "main": "UserProfileReport.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "start:assessment": "node assessment-migration.js",
+    "start:course": "node course-migration.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "pg": "^8.14.1",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0",
     "uuid": "^11.1.0"
   }
 }
